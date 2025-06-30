@@ -36,7 +36,7 @@ This repository contains Python scripts to extract Facebook video links from a s
    - In a Python REPL or script, import and invoke:
 
    ```python
-   from your_module import run_standard
+   from DownloadFacebookAudio import run_standard
 
    # Example: replace with your folder path and church name
    run_standard(r"C:\Path\To\YourFolder", church_name="YourChurch", default_speaker=None)
@@ -52,7 +52,7 @@ This repository contains Python scripts to extract Facebook video links from a s
    2. `download_sermon_audio` reads `_sermons.csv` and for each row:
       - Builds a `base_name` using `[church_name]_[speaker]_[title?]`.
       - Calls `download_facebook_audio` to download the audio (and optional thumbnail) named accordingly.
-   3. You can also run `download_sermon_videos` in place of audio to fetch full video files.
+   3. You can also run `download_sermon_videos` in place of audio to fetch full video files (not yet tested).
 
 ---
 
